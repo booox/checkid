@@ -1,0 +1,143 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+"zh-CN":
+  hello: "Hello world"
+  site:
+    site_name: "答题宝典"
+    my_favorite: "我的收藏"
+    my_wrong: "我的错题"
+    delete_confirm: "确定要删除吗？"
+    navbar:
+      registration: "注册"
+      new_session: "登入"
+      nav: "导航"
+      complain: "吐槽管理"
+      quiz: "试卷管理"
+      question: "问题管理"
+      category: "类别管理"
+      type: "题型管理"
+      organization: "组织管理"
+      announcement: "通知管理"
+      users: "用户管理"
+      account: "我的账户"
+      logout: "登出"
+    admin:
+      organization:
+        title: "名称"
+        alias: "别名"
+      announcement:
+        message: "通知内容"
+        starts_at: "开始时间"
+        ends_at: "结束时间"
+      users:
+        title: "用户管理"
+        no: "No."
+        email: "邮箱"
+        nickname: "昵称"
+        real_name: "真实姓名"
+        organization: "公司/学校/单位"
+        department: "部门/班级"
+        operate: "操作"
+        create_success: "用户创建成功"
+        update_success: "用户信息更新成功"
+        update_user_password_success: "用户密码更新成功"
+        delete_success: "用户已删除"
+      exams:
+        title: "试卷完成统计"
+      quiz:
+        create_success: "试卷添加成功"
+        update_success: "试卷更新成功"
+        delete_success: "试卷更新成功"
+        quiz_title: "试卷题目(*)"
+        category: "抽题类别(*)"
+        range: "范围"
+        from: "从 : "
+        to: "指定数量："
+        count: "到 : "
+        cover: "封面图片(*)"
+        is_random:
+          title: "抽题方式："
+          "false": "顺序"
+          "true": "随机"
+        statistics:
+          title: "测试统计："
+
+    account:
+      profile:
+        title: "我的资料"
+        submit: "更新资料"
+        nickname: "昵称"
+        real_name: "真实姓名"
+        organization: "公司/组织"
+        department: "部门/班级"
+        wechat: "微信号"
+        qq: "QQ"
+        time_zone: "时区"
+        update_success: "个人资料修改成功"
+      password:
+        title: "修改密码"
+        submit: "更新密码"
+        current_password_hint: '请输入原密码'
+        password_hint: '如果不打算修改密码，请不用填写'
+        # password_confirmation_hint: '确认新密码'
+  quiz:
+    reset_quiz: "清空重做"
+    reset_quiz_confirm: "如果清空重做，所有记录都会被删除\n确定要清空重做吗？"
+    leaderboard:
+      button: "排行榜"
+      title1: "我的积分"
+      title2: "本测试积分榜"
+      current_score_text: "当前积分: "
+      current_ranke_text: "; 排位:"
+      user_name: "用户名"
+      score: "积分"
+      rank: "排位"
+      not_start: "还没有开始做，要抓紧喽！"
+    statistics:
+      button: "进度表"
+      title1: "我的进度"
+      title2: "本测试完成进度"
+      user_name: "用户名"
+      count: "已完成"
+      graph: "图示"
+      current_user_statistics: "当前进度: "
+      not_start: "还没有开始做，要抓紧喽！"
+  profile:
+    organizations:
+      nb2j: "宁波第二技师学院"
+    departments:
+      17jzsg: "17 建筑施工"
+      17jzzsB: "17 建筑装饰 B"
+  question:
+    answer:
+      "false": "否"
+      "true": "是"
+  user:
+    favorite: "_favorite_"
+    wrong: "_wrong_"
+  activerecord:
+    errors:
+      messages:
+        record_invalid: " 验证失败: %{errors}"
+        restrict_dependent_destroy:
+          has_one:  由于 %{record} 需要此记录，所以无法移除记录
+          has_many:  由于 %{record} 需要此记录，所以无法移除记录
